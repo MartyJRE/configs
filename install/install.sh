@@ -14,6 +14,6 @@ cd &&
     )
   ) &&
   cp -R ./configs/.config/* ./.config &&
-  cp ./configs/pacman/pacman.conf /etc/pacman.conf &&
+  sudo cp ./configs/pacman/pacman.conf /etc/pacman.conf &&
   rsync -am ./configs ./ &&
   echo "Copied all configurations to their desired locations"
